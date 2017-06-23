@@ -1,0 +1,6 @@
+2017-06-22 16:34:09 INFO  ParalellTest:15 - This is info 
+2017-06-22 16:35:56 INFO  ParalellTest:16 - This is info
+2017-06-22 16:35:56 DEBUG ParalellTest:17 - This is debug
+2017-06-22 16:35:56 WARN  ParalellTest:18 - This is warn
+2017-06-22 16:35:56 ERROR ParalellTest:19 - This is error
+2017-06-22 16:35:56 FATAL ParalellTest:20 - This is fatal
