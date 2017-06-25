@@ -4,3 +4,16 @@
 2017-06-22 16:35:56 WARN  ParalellTest:18 - This is warn
 2017-06-22 16:35:56 ERROR ParalellTest:19 - This is error
 2017-06-22 16:35:56 FATAL ParalellTest:20 - This is fatal
+2017-06-24 18:16:08 INFO  ParallelTest:16 - This is info
+2017-06-24 18:16:08 DEBUG ParallelTest:17 - This is debug
+2017-06-24 18:16:08 WARN  ParallelTest:18 - This is warn
+2017-06-24 18:16:08 ERROR ParallelTest:19 - This is error
+2017-06-24 18:16:08 FATAL ParallelTest:20 - This is fatal
+2017-06-24 18:16:31 INFO  CrossingAxisTest:16 - This is info
+2017-06-24 18:16:31 DEBUG CrossingAxisTest:17 - This is debug
+2017-06-24 18:16:31 WARN  CrossingAxisTest:18 - This is warn
+2017-06-24 18:16:31 ERROR CrossingAxisTest:19 - This is error
+2017-06-24 18:16:31 FATAL CrossingAxisTest:20 - This is fatal
+2017-06-25 21:43:38 INFO  ParallelTest:38 - line|1;1;0|5;5;5
+2017-06-25 21:43:38 INFO  ParallelTest:38 - line|1;1;1|5;5;6
+2017-06-25 21:46:51 INFO  ParallelTest:38 - line|1;1;0|5;5;5|line|1;1;1|5;5;6|

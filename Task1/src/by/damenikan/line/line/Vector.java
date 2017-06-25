@@ -9,14 +9,17 @@ public class Vector {
 	
 	
 	public Vector(){
+	}
+	
+	public Vector(Point pointOne, Point pointTwo){
+	
+		double x1 = pointOne.getX();
+		double y1 = pointOne.getY();
+		double z1 = pointOne.getZ();
 		
-		double x1 = this.pointOne.getX();
-		double y1 = this.pointOne.getY();
-		double z1 = this.pointOne.getZ();
-		
-		double x2 = this.pointTwo.getX();
-		double y2 = this.pointTwo.getY();
-		double z2 = this.pointTwo.getZ();
+		double x2 = pointTwo.getX();
+		double y2 = pointTwo.getY();
+		double z2 = pointTwo.getZ();
 		
 		this.a = x2 - x1;
 		this.b = y2 - y1;

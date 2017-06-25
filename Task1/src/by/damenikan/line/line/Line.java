@@ -10,15 +10,18 @@ public class Line {
 	private Point nextPoint = new Point();
 	
 	public Line(){
+	}
+	
+	public Line(Point startPoint, Vector vector, double t)
+	{
 		
-		
-		this.coordX = this.vector.getA() * this.t - this.startPoint.getX();
+		this.coordX = vector.getA() * t - startPoint.getX();
 		nextPoint.setX(this.coordX);
 		
-		this.coordY = this.vector.getB() * this.t - this.startPoint.getY();
+		this.coordY = vector.getB() * t - startPoint.getY();
 		nextPoint.setX(this.coordY);
 		
-		this.coordZ = this.vector.getC() * this.t - this.startPoint.getZ();
+		this.coordZ = vector.getC() * t - startPoint.getZ();
 		nextPoint.setX(this.coordZ);
 	}
 	
@@ -46,4 +49,15 @@ public class Line {
 		return this.t;
 	}
 	
+	public double getCoordX(){
+		return this.coordX;
+	}
+	
+	public double getCoordY(){
+		return this.coordY;
+	}
+	
+	public double getCoordZ(){
+		return this.coordZ;
+	}
 }

@@ -2,44 +2,48 @@ package by.damenikan.line.unittest;
 
 import static org.junit.Assert.*;
 
+import java.io.File;
+import java.util.ArrayList;
+
 import org.apache.log4j.Logger;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
+import by.damenikan.line.dataload.*;
 
 @RunWith(Parameterized.class)
 public class ParallelTest {
-	  	String message1 = "Hello World";	
+	  	
+		private String testData;	
 	  	String message2 = "Hello World";
-	  	final static Logger logger = Logger.getLogger(ParallelTest.class);
+	  	
+	  	//final static Logger logger = Logger.getLogger(ParallelTest.class);
 	   
 	  	
-	  	public  ParallelTest (String input_data){
-	  		
+	  	public  ParallelTest (String testData){	 
+	  		this.testData = testData;
 	  	}
 	  	
 	  	@Parameters
-	  	public static String data() {
-	        return "Test Parameter";
+	  	public static ArrayList<String> data() {
+	  		return DataReader.readDataFile(new File("datafiles/line_parallel.txt"));
 	    }
-	  	
-	  	@Parameter
-	  	public String v_fisrst;
-	  	
 	  	
 	  	@Test
 	   public void testPrintMessage() {	 
 	  		
-	  		logger.info(v_fisrst);
-	  		logger.info("This is info");
+	  		String testLine;
+	  		testLine = testData;
+	  		//logger.info(testLine);
+	  		/*
 	  		logger.debug("This is debug");
 	  		logger.warn("This is warn" );
 			logger.error("This is error" );
 			logger.fatal("This is fatal" );
+			*/
 
-	      assertEquals(message1, message2);
+	      assertEquals("test", "test");
 	   }
 }
 
