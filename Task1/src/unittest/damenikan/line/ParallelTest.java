@@ -18,7 +18,7 @@ public class ParallelTest {
 		private String testData;	
 	  	String message2 = "Hello World";
 	  	
-	  	//final static Logger logger = Logger.getLogger(ParallelTest.class);
+	  	final static Logger logger = Logger.getLogger(ParallelTest.class);
 	   
 	  	
 	  	public  ParallelTest (String testData){	 
@@ -35,7 +35,7 @@ public class ParallelTest {
 	  		
 	  		String testLine;
 	  		testLine = testData;
-	  		//logger.info(testLine);
+	  		logger.info(testLine);
 	  		/*
 	  		logger.debug("This is debug");
 	  		logger.warn("This is warn" );

@@ -2,7 +2,6 @@ package by.damenikan.line.creator;
 
 import by.damenikan.line.entity.Line;
 import by.damenikan.line.entity.Point;
-import by.damenikan.line.entity.Vector;
 
 public class LineCreator {
 

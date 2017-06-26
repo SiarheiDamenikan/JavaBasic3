@@ -10,3 +10,6 @@
 *.rar
 
 /bin/
+.metadata
+.recommenders
+.RemoteSystemsTempFiles
