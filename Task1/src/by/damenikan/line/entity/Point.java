@@ -1,4 +1,4 @@
-package by.damenikan.line.line;
+package by.damenikan.line.entity;
 
 public class Point {
 	private double x;

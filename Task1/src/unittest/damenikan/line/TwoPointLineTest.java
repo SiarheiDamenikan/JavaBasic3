@@ -1,4 +1,4 @@
-package by.damenikan.line.unittest;
+package unittest.damenikan.line;
 
 public class TwoPointLineTest {
 

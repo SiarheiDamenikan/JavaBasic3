@@ -11,19 +11,19 @@ public class DataReader {
 		
 		ArrayList<String> fileRows  = new ArrayList<String>();
 		String row;
-		BufferedReader bfReader = null; 
+		BufferedReader reader = null; 
 				
 		try {
-			bfReader = new BufferedReader(new FileReader(file));
+			reader = new BufferedReader(new FileReader(file));
 			
-			while ((row = bfReader.readLine()) != null) {
+			while ((row = reader.readLine()) != null) {
 				fileRows.add(row);
 			} 
 		}catch (IOException e) {
 			e.printStackTrace();
 		}finally {		
 			try {
-				bfReader.close();
+				reader.close();
 			} catch (IOException e) {				
 				e.printStackTrace();
 			}
