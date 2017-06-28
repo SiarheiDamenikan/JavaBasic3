@@ -1,10 +1,9 @@
 package test.damenikan.line;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.Collections;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,11 +15,11 @@ import by.damenikan.line.entity.Line;
 import by.damenikan.line.entity.Point;
 
 @RunWith(Parameterized.class)
-public class CoordinatePlaneTest {
+public class TwoPointForLineTest {
   	private Point startLine;
   	private Point endLine;
    
-  	public  CoordinatePlaneTest (Point startLine, Point endLine){
+  	public  TwoPointForLineTest (Point startLine, Point endLine){
   		this.startLine = startLine;
   		this.endLine = endLine;
   	}
@@ -28,18 +27,24 @@ public class CoordinatePlaneTest {
   	@Parameters
   	public static Collection<Object[]> data() {
   		return Arrays.asList(new Object[][]{
-  			{new Point(1,1,2), new Point(2,2,2)}
+  			{new Point(1,1,1), new Point(2,2,2)}
   		});
     }
  
   	@Test
-   public void TestCoordinatePlane() {	 
+   public void testTwoPointForLine() {	 
   		
   		Line line = LineCreator.createLine(this.startLine, this.endLine);
   		
   		Point vector = line.geVector();
+  		
+  		int compareX = Double.compare(vector.getX(), 0d);
+  		int compareY = Double.compare(vector.getY(), 0d);
+  		int compareZ = Double.compare(vector.getZ(), 0d);
 
-  		assertEquals(Collections.frequency(Arrays.asList(new Object[] { vector.getX(), vector.getY(), vector.getZ()}), 0d), 1);
+  		assertNotEquals(compareX, 0);
+  		assertNotEquals(compareY, 0);
+  		assertNotEquals(compareZ, 0);
   		
    }
 }

@@ -18,7 +18,6 @@ import by.damenikan.line.entity.Point;
 @RunWith(Parameterized.class)
 public class ParallelTest {
 	  	
-		
 	  	private Point startLineOne;
 	  	private Point endLineOne;
 	  	private Point startLineTwo;
@@ -26,7 +25,6 @@ public class ParallelTest {
 	  	
 	  	//final static Logger logger = Logger.getLogger(ParallelTest.class);
 	   
-	  	
 	  	public  ParallelTest (Point startLineOne, Point endLineOne, Point startLineTwo, Point endLineTwo){	 
 	  		this.startLineOne = startLineOne;
 	  		this.endLineOne = endLineOne;
@@ -40,7 +38,7 @@ public class ParallelTest {
 	  			{new Point(1,1,1), new Point(2,2,2), new Point(1,1,2), new Point(2,2,3)}
 	  		});
 	    }
-	  	
+	 
 	  	@Test
 	   public void testParalleLine() {	 
 	  		
@@ -52,10 +50,10 @@ public class ParallelTest {
 
 	  		int retvalXY = Double.compare(vectorOne.getX()/vectorTwo.getX(), vectorOne.getY()/vectorTwo.getY());
 	  		int retvalXZ = Double.compare(vectorOne.getX()/vectorTwo.getX(), vectorOne.getZ()/vectorTwo.getZ());
-
+	  		
 	  		assertEquals(retvalXY, retvalXZ);
 	  		
-  	
+	  		
 	   }
 }
 
