@@ -1,4 +1,4 @@
-package unittest.damenikan.line;
+package test.damenikan.line;
 
 public class CoordinatePlaneTest {
 

@@ -1,4 +1,4 @@
-package unittest.damenikan.line;
+package test.damenikan.line;
 
 import static org.junit.Assert.assertEquals;
 
