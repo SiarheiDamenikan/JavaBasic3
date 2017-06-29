@@ -27,7 +27,7 @@ public class TwoPointForLineTest {
   	@Parameters
   	public static Collection<Object[]> data() {
   		return Arrays.asList(new Object[][]{
-  			{new Point(1,1,1), new Point(2,2,2)}
+  			{new Point(1,1,1), new Point(2,2,1)}
   		});
     }
  
@@ -38,13 +38,10 @@ public class TwoPointForLineTest {
   		
   		Point vector = line.geVector();
   		
-  		int compareX = Double.compare(vector.getX(), 0d);
-  		int compareY = Double.compare(vector.getY(), 0d);
-  		int compareZ = Double.compare(vector.getZ(), 0d);
+  		assertNotEquals(0d, vector.getX(), 0);
+  		assertNotEquals(0d, vector.getY(), 0);
+  		assertNotEquals(0d, vector.getZ(), 0);
 
-  		assertNotEquals(compareX, 0);
-  		assertNotEquals(compareY, 0);
-  		assertNotEquals(compareZ, 0);
   		
    }
 }

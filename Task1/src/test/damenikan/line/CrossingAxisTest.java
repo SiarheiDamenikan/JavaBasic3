@@ -21,14 +21,14 @@ import by.damenikan.line.entity.Point;
 		  	private Point endLineOne;
 		  	private Point startLineTwo;
 		  	private Point endLineTwo;
-		  	private int angle;
+		  	private int expectedAngle;
 		  	
 		  	public  CrossingAxisTest (Point startLineOne, Point endLineOne, Point startLineTwo, Point endLineTwo, int angle){	 
 		  		this.startLineOne = startLineOne;
 		  		this.endLineOne = endLineOne;
 		  		this.startLineTwo = startLineTwo;
 		  		this.endLineTwo = endLineTwo;
-		  		this.angle = angle;
+		  		this.expectedAngle = angle;
 		  	}
 		  	
 		  	@Parameters
@@ -62,7 +62,7 @@ import by.damenikan.line.entity.Point;
 		  		
 		  		double angleCalc = Math.acos(skalar/modul)*180/Math.PI;
 		  		
-		  		assertEquals((int)angleCalc, angle);
+		  		assertEquals(expectedAngle, (int)angleCalc);
 
 		   }
 	}
