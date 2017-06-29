@@ -10,6 +10,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
+import by.damenikan.line.action.Angle;
 import by.damenikan.line.creator.LineCreator;
 import by.damenikan.line.entity.Line;
 import by.damenikan.line.entity.Point;
@@ -34,7 +35,7 @@ import by.damenikan.line.entity.Point;
 		  	@Parameters
 		  	public static Collection<Object[]> data() {
 		  		return Arrays.asList(new Object[][]{
-		  		   //for simply test I set crossing line with axis OX on angle 45 degrees
+		  		   //for simply test I set crossing line with axis OX on angle 45 degrees. Line in plane XY
 		  			{new Point(1,1,0), new Point(2,2,0), new Point(1,0,0), new Point(2,0,0), 45 } 
 		  		});
 		    }
@@ -45,22 +46,7 @@ import by.damenikan.line.entity.Point;
 		  		Line lineOne = LineCreator.createLine(this.startLineOne, this.endLineOne);
 		  		Line axis = LineCreator.createLine(this.startLineTwo, this.endLineTwo);
 		  		
-	  		
-		  		Point vectorOne = lineOne.geVector();
-		  		Point vectorAxis = axis.geVector();
-		  		
-		  		double aX = vectorOne.getX();
-		  		double aY = vectorOne.getY();
-		  		double aZ = vectorOne.getZ();
-		  		
-		  		double bX = vectorAxis.getX();
-		  		double bY = vectorAxis.getY();
-		  		double bZ = vectorAxis.getZ();
-		  		
-		  		double skalar = aX*bX + aY*bY + aZ*bZ;
-		  		double modul = Math.sqrt(aX*aX + aY*aY + aZ*aZ) * Math.sqrt(bX*bX + bY*bY + bZ*bZ);
-		  		
-		  		double angleCalc = Math.acos(skalar/modul)*180/Math.PI;
+		  		double angleCalc = Angle.calculateAngle(lineOne, axis);
 		  		
 		  		assertEquals(expectedAngle, (int)angleCalc);
 

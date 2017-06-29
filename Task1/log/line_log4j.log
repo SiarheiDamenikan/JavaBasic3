@@ -9,3 +9,5 @@
 2017-06-26 17:58:09 INFO  ParallelTest:38 - line|1;1;1|2;2;2
 2017-06-26 17:58:09 INFO  ParallelTest:38 - line|3;3;3|4;4;4
 2017-06-28 16:57:09 INFO  ParallelTest:48 - 1.0
+2017-06-30 01:09:05 INFO  RunTask:20 - Distance between two lines0.0
+2017-06-30 01:09:58 INFO  RunTask:20 - Distance between two lines = 0.816496580927726

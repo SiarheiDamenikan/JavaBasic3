@@ -6,7 +6,13 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 public class DataReader {
+	
+	private static Logger logger = LogManager.getLogger(DataReader.class.getName());
+	
 	public static ArrayList<String> readDataFile(File file) {
 		
 		ArrayList<String> fileRows  = new ArrayList<String>();
@@ -20,12 +26,12 @@ public class DataReader {
 				fileRows.add(row);
 			} 
 		}catch (IOException e) {
-			e.printStackTrace();
+			logger.error("FILE READING ERROR " + file.getName());
 		}finally {		
 			try {
 				reader.close();
 			} catch (IOException e) {				
-				e.printStackTrace();
+				logger.error("FILE ACESS ERROR " + file.getName());
 			}
 		}
 		
