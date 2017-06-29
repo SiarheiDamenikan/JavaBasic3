@@ -45,11 +45,11 @@ public class Line {
 	};
 	
 	public void setEndPoint(Point point){
-		this.startPoint = point;
+		this.endPoint = point;
 	}
 	
 	public Point getEndPoint(){
-		return this.startPoint;
+		return this.endPoint;
 	};
 	
 	public void setAnyT(double t){

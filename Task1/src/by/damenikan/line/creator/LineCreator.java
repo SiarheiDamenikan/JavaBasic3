@@ -9,7 +9,7 @@ public class LineCreator {
 
 	public static Line createLine(Point startPoint, Point endPoint){
 
-		 double x=0, y = 0, z = 0 , t = 3;
+		double t = 3;
 
 		Line line = new Line(startPoint, endPoint, t);
 		
