@@ -1,0 +1,16 @@
+How do I install Java ?
+Choose the Operating System for instructions to install Java:
+Windows
+Mac
+Linux
+Solaris
+SolariS
+Windows Download and Installation
+Downloading and installing Java is easy and free. There are a couple ways by which you can get Java for Windows
+Online download
+Offline download
+Offline downloaD
+Online
+Manual installation downloads an IFTW (Install From The Web) executable program file and requires minimum user intervention. When you run this program, it fetches all the required files from the web, so you must remain connected to the Internet during the installation.
+Administrative permission is required in order to install Java on Microsoft Windows.
+If you face difficulty using the online download option, try the offline download option.
