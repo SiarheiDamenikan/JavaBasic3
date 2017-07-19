@@ -1,0 +1,6 @@
+package by.damenikan.tariff.Message;
+
+public enum Doll {
+	SMS,
+	MMS;
+}
