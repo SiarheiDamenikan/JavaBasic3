@@ -1,0 +1,7 @@
+package by.damenikan.tariff.Calls;
+
+public enum Doll {
+	ONNET,
+	OTHERNET,
+  ROAMING;
+}
