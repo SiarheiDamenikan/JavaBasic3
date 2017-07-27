@@ -1,0 +1,17 @@
+package by.damenikan.types.internetpack;
+
+public enum InternetPack {
+	PACK1GB(1),
+	PACK2GB(2),
+  PACK3GB(3),;
+	
+	private int traffic;
+	
+	InternatPack (int traffic){
+		this.traffic = traffic;
+	}
+	
+	public int getTraffic(){
+		return this.traffic;
+	}
+}
