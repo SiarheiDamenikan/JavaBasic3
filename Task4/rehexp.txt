@@ -1,0 +1,4 @@
+^\s{4}.+($\n|(\.){1}) -- extract paragraph
+[^.!?\s][^.!?]*(?:[.!?](?!['"]?\s|$)[^.!?]*)*[.!?]?['"]?(?=\s|$) -- extract sentence
+[^.!?\n]*[.!?\n] -- extract sentence
+
