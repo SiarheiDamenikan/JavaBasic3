@@ -1,4 +1,4 @@
-package by.damenikan.tariff.Call;
+package by.damenikan.tariff.types;
 
 public enum Call {
 	ONNET,

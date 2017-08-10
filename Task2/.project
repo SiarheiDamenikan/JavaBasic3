@@ -14,4 +14,26 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/by/damenikan/tariff/types/Call.java</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/bin/by/damenikan/tariff/types/Call.java</locationURI>
+		</link>
+		<link>
+			<name>src/by/damenikan/tariff/types/InternetPack.java</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/bin/by/damenikan/tariff/types/InternetPack.java</locationURI>
+		</link>
+		<link>
+			<name>src/by/damenikan/tariff/types/Message.java</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/bin/by/damenikan/tariff/types/Message.java</locationURI>
+		</link>
+		<link>
+			<name>src/by/damenikan/tariff/types/Region.java</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/bin/by/damenikan/tariff/types/Region.java</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>

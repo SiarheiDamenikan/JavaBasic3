@@ -1,4 +1,4 @@
-package by.damenikan.tariff.Message;
+package by.damenikan.tariff.types;
 
 public enum Message {
 	SMS,
