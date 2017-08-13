@@ -1,6 +1,6 @@
 package by.damenikan.tariff.types;
 
-public enum Message {
+public enum MessageType {
 	SMS,
 	MMS;
 }
